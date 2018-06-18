@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AAB613320D84BCF003EB17C /* FoursquareAPIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAB613220D84BCF003EB17C /* FoursquareAPIResponses.swift */; };
 		1AE8583420D81E28009869BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8583320D81E28009869BE /* AppDelegate.swift */; };
 		1AE8583620D81E28009869BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8583520D81E28009869BE /* ViewController.swift */; };
 		1AE8583920D81E28009869BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8583720D81E28009869BE /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		044B9D920C63A2D25EFD79D8 /* Pods-WhitbreadTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhitbreadTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhitbreadTest/Pods-WhitbreadTest.debug.xcconfig"; sourceTree = "<group>"; };
+		1AAB613220D84BCF003EB17C /* FoursquareAPIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIResponses.swift; sourceTree = "<group>"; };
 		1AB3E5369629546AC8EBE4F4 /* Pods_WhitbreadTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhitbreadTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE8583020D81E28009869BE /* WhitbreadTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitbreadTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE8583320D81E28009869BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				1AE8585620D82008009869BE /* FoursquareAPI.swift */,
 				1AE8585920D82413009869BE /* FoursquareAPIRequestAdapter.swift */,
+				1AAB613220D84BCF003EB17C /* FoursquareAPIResponses.swift */,
 			);
 			path = FoursquareAPI;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AAB613320D84BCF003EB17C /* FoursquareAPIResponses.swift in Sources */,
 				1AE8583620D81E28009869BE /* ViewController.swift in Sources */,
 				1AE8585820D82008009869BE /* FoursquareAPI.swift in Sources */,
 				1AE8583420D81E28009869BE /* AppDelegate.swift in Sources */,
