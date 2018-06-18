@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
+    private let api = FoursquareAPI(credentials: .userless(clientID: "ALHUK5X3ZKR0ERTF5LFYEDBWPBIKYJWYYFCZ1VALJVY0IUUP",
+                                                           clientSecret: "5JIKUHILVLI4C3T0ZHUK02W4DKAYMETBOYQZ5RAHR13FUVFI"))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let request = api.sessionManager.request(FoursquareAPI.Router.venuesSearch(query: "Bar", limit: 2))
+        request.responseJSON { (response) in
+            print(response)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
