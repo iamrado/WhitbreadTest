@@ -13,6 +13,8 @@
 		1AE8583B20D81E2A009869BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8583A20D81E2A009869BE /* Assets.xcassets */; };
 		1AE8583E20D81E2A009869BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8583C20D81E2A009869BE /* LaunchScreen.storyboard */; };
 		1AE8584920D81E2A009869BE /* WhitbreadTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8584820D81E2A009869BE /* WhitbreadTestTests.swift */; };
+		1AE8585820D82008009869BE /* FoursquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8585620D82008009869BE /* FoursquareAPI.swift */; };
+		1AE8585A20D82413009869BE /* FoursquareAPIRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8585920D82413009869BE /* FoursquareAPIRequestAdapter.swift */; };
 		4967D5AA2C23819B062F488D /* Pods_WhitbreadTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB3E5369629546AC8EBE4F4 /* Pods_WhitbreadTestTests.framework */; };
 		C16F8DF7F1E12ADB0746D5DF /* Pods_WhitbreadTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253CF04712D5196461A4DE81 /* Pods_WhitbreadTest.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		1AE8584420D81E2A009869BE /* WhitbreadTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitbreadTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE8584820D81E2A009869BE /* WhitbreadTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitbreadTestTests.swift; sourceTree = "<group>"; };
 		1AE8584A20D81E2A009869BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AE8585620D82008009869BE /* FoursquareAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAPI.swift; sourceTree = "<group>"; };
+		1AE8585920D82413009869BE /* FoursquareAPIRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIRequestAdapter.swift; sourceTree = "<group>"; };
 		253CF04712D5196461A4DE81 /* Pods_WhitbreadTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhitbreadTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE1EFA7FB903DE7868F944F /* Pods-WhitbreadTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhitbreadTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhitbreadTestTests/Pods-WhitbreadTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3EB2D39E1E34971F43D90BA /* Pods-WhitbreadTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhitbreadTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhitbreadTest/Pods-WhitbreadTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 		1AE8583220D81E28009869BE /* WhitbreadTest */ = {
 			isa = PBXGroup;
 			children = (
+				1AE8585320D81F52009869BE /* Services */,
 				1AE8583320D81E28009869BE /* AppDelegate.swift */,
 				1AE8583520D81E28009869BE /* ViewController.swift */,
 				1AE8583720D81E28009869BE /* Main.storyboard */,
@@ -106,6 +111,23 @@
 				1AE8584A20D81E2A009869BE /* Info.plist */,
 			);
 			path = WhitbreadTestTests;
+			sourceTree = "<group>";
+		};
+		1AE8585320D81F52009869BE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1AE8585420D81FCD009869BE /* FoursquareAPI */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1AE8585420D81FCD009869BE /* FoursquareAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1AE8585620D82008009869BE /* FoursquareAPI.swift */,
+				1AE8585920D82413009869BE /* FoursquareAPIRequestAdapter.swift */,
+			);
+			path = FoursquareAPI;
 			sourceTree = "<group>";
 		};
 		65D6B9FB6909D3C70B9D5E6F /* Pods */ = {
@@ -296,7 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AE8583620D81E28009869BE /* ViewController.swift in Sources */,
+				1AE8585820D82008009869BE /* FoursquareAPI.swift in Sources */,
 				1AE8583420D81E28009869BE /* AppDelegate.swift in Sources */,
+				1AE8585A20D82413009869BE /* FoursquareAPIRequestAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
