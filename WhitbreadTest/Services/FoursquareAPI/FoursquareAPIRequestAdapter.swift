@@ -10,9 +10,9 @@ import Foundation
 import Alamofire
 
 class FoursquareAPIRequestAdapter: RequestAdapter {
-    private let clientID: String
-    private let clientSecret: String
-    private let version: String
+    let clientID: String
+    let clientSecret: String
+    let version: String
 
     init(clientID: String, clientSecret: String, version: String) {
         self.clientID = clientID

@@ -11,8 +11,7 @@ import Alamofire
 
 class FoursquareAPI {
     let sessionManager: SessionManager
-
-    private var adapter: FoursquareAPIRequestAdapter { return sessionManager.adapter as! FoursquareAPIRequestAdapter }
+    var adapter: FoursquareAPIRequestAdapter { return sessionManager.adapter as! FoursquareAPIRequestAdapter }
 
     convenience init(credentials: Credentials, version: String = "20180323") {
         switch credentials {
