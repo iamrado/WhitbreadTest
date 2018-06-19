@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let viewController: VenueSearchViewController = VenueSearchViewController.instantiate(api: api)
+        viewController.title = NSLocalizedString("Venues", comment: "")
         let navigationController = UINavigationController(rootViewController: viewController)
 
         window = UIWindow(frame: UIScreen.main.bounds)
