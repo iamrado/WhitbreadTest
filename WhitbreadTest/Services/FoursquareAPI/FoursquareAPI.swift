@@ -33,8 +33,8 @@ class FoursquareAPI {
     }
 
     static let `default`: FoursquareAPI = {
-        return FoursquareAPI(credentials: .userless(clientID: "ALHUK5X3ZKR0ERTF5LFYEDBWPBIKYJWYYFCZ1VALJVY0IUUP",
-                                                    clientSecret: "5JIKUHILVLI4C3T0ZHUK02W4DKAYMETBOYQZ5RAHR13FUVFI"))
+        return FoursquareAPI(credentials: .userless(clientID: "12TBMZ5DUFWJD0MID5SGPPBHPJXHUVXRM4BTD3NTZQNDYN2Q",
+                                                    clientSecret: "BIAQEU3F3Z2AL3M0DVZ2XD0F0N5VKSDCZCXY2V53AHAR1UZC"))
     }()
 }
 
