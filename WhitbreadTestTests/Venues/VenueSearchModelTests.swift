@@ -67,4 +67,23 @@ class VenueSearchModelTests: XCTestCase {
         wait(for: [expectation], timeout: 1)
         XCTAssertEqual(model.items.count, 0)
     }
+
+    func testSearchWithNilDoesNotSendRequest() {
+        var requestSent = false
+        stub(condition: isHost("api.foursquare.com") && isPath("/v2/venues/search")) { (request) -> OHHTTPStubsResponse in
+            requestSent = true
+            return OHHTTPStubsResponse(error: NSError(domain: NSURLErrorDomain, code: 1, userInfo: nil))
+        }
+
+        let expectation = self.expectation(description: "Wait for HTTP response")
+
+        let model = VenueSearchModel(api: api)
+        model.onSearchFinished = { result in
+            expectation.fulfill()
+        }
+
+        model.searchTerm =  nil
+        wait(for: [expectation], timeout: 1)
+        XCTAssertFalse(requestSent)
+    }
 }
