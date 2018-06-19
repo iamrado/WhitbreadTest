@@ -10,10 +10,11 @@
 		1AAB613320D84BCF003EB17C /* FoursquareAPIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAB613220D84BCF003EB17C /* FoursquareAPIResponses.swift */; };
 		1AAB613C20D85D9C003EB17C /* KeyboardOffsetHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAB613B20D85D9C003EB17C /* KeyboardOffsetHandler.swift */; };
 		1AAB613E20D85DBB003EB17C /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAB613D20D85DBB003EB17C /* KeyboardHelper.swift */; };
+		1AAB614520D8F9E0003EB17C /* ResponseMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAB614420D8F9E0003EB17C /* ResponseMappingTests.swift */; };
+		1AAB614720D8FB2C003EB17C /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AAB614620D8FB2C003EB17C /* venues.json */; };
 		1AE8583420D81E28009869BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8583320D81E28009869BE /* AppDelegate.swift */; };
 		1AE8583B20D81E2A009869BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8583A20D81E2A009869BE /* Assets.xcassets */; };
 		1AE8583E20D81E2A009869BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8583C20D81E2A009869BE /* LaunchScreen.storyboard */; };
-		1AE8584920D81E2A009869BE /* WhitbreadTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8584820D81E2A009869BE /* WhitbreadTestTests.swift */; };
 		1AE8585820D82008009869BE /* FoursquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8585620D82008009869BE /* FoursquareAPI.swift */; };
 		1AE8585A20D82413009869BE /* FoursquareAPIRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8585920D82413009869BE /* FoursquareAPIRequestAdapter.swift */; };
 		1AE8586220D8333B009869BE /* VenueSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8586120D8333B009869BE /* VenueSearchViewController.swift */; };
@@ -43,6 +44,8 @@
 		1AAB613220D84BCF003EB17C /* FoursquareAPIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIResponses.swift; sourceTree = "<group>"; };
 		1AAB613B20D85D9C003EB17C /* KeyboardOffsetHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardOffsetHandler.swift; sourceTree = "<group>"; };
 		1AAB613D20D85DBB003EB17C /* KeyboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		1AAB614420D8F9E0003EB17C /* ResponseMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMappingTests.swift; sourceTree = "<group>"; };
+		1AAB614620D8FB2C003EB17C /* venues.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = venues.json; sourceTree = "<group>"; };
 		1AB3E5369629546AC8EBE4F4 /* Pods_WhitbreadTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhitbreadTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE8583020D81E28009869BE /* WhitbreadTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitbreadTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE8583320D81E28009869BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		1AE8583D20D81E2A009869BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AE8583F20D81E2A009869BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE8584420D81E2A009869BE /* WhitbreadTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitbreadTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AE8584820D81E2A009869BE /* WhitbreadTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitbreadTestTests.swift; sourceTree = "<group>"; };
 		1AE8584A20D81E2A009869BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE8585620D82008009869BE /* FoursquareAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAPI.swift; sourceTree = "<group>"; };
 		1AE8585920D82413009869BE /* FoursquareAPIRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIRequestAdapter.swift; sourceTree = "<group>"; };
@@ -88,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AAB614320D8F9C3003EB17C /* FoursquareAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1AAB614420D8F9E0003EB17C /* ResponseMappingTests.swift */,
+				1AAB614620D8FB2C003EB17C /* venues.json */,
+			);
+			path = FoursquareAPI;
+			sourceTree = "<group>";
+		};
 		1AE8582720D81E28009869BE = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +136,7 @@
 		1AE8584720D81E2A009869BE /* WhitbreadTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				1AE8584820D81E2A009869BE /* WhitbreadTestTests.swift */,
+				1AAB614320D8F9C3003EB17C /* FoursquareAPI */,
 				1AE8584A20D81E2A009869BE /* Info.plist */,
 			);
 			path = WhitbreadTestTests;
@@ -239,6 +250,7 @@
 				1AE8584020D81E2A009869BE /* Sources */,
 				1AE8584120D81E2A009869BE /* Frameworks */,
 				1AE8584220D81E2A009869BE /* Resources */,
+				48DBEDA547FE35B3A2453DE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +277,7 @@
 					};
 					1AE8584320D81E2A009869BE = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = 1AE8582F20D81E28009869BE;
 					};
 				};
@@ -304,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AAB614720D8FB2C003EB17C /* venues.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +346,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhitbreadTest/Pods-WhitbreadTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48DBEDA547FE35B3A2453DE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhitbreadTestTests/Pods-WhitbreadTestTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhitbreadTestTests/Pods-WhitbreadTestTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BDF993AA9BA4A935C0F16ACC /* [CP] Check Pods Manifest.lock */ = {
@@ -396,7 +432,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE8584920D81E2A009869BE /* WhitbreadTestTests.swift in Sources */,
+				1AAB614520D8F9E0003EB17C /* ResponseMappingTests.swift in Sources */,
+				1AAB614B20D8FE5E003EB17C /* FoursquareAPIRequestAdapterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +619,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 623KFYEN4J;
 				INFOPLIST_FILE = WhitbreadTestTests/Info.plist;
@@ -592,6 +630,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamrado.WhitbreadTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhitbreadTest.app/WhitbreadTest";
@@ -604,6 +643,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 623KFYEN4J;
 				INFOPLIST_FILE = WhitbreadTestTests/Info.plist;
