@@ -11,7 +11,6 @@
 		1AAB613C20D85D9C003EB17C /* KeyboardOffsetHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAB613B20D85D9C003EB17C /* KeyboardOffsetHandler.swift */; };
 		1AAB613E20D85DBB003EB17C /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAB613D20D85DBB003EB17C /* KeyboardHelper.swift */; };
 		1AE8583420D81E28009869BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8583320D81E28009869BE /* AppDelegate.swift */; };
-		1AE8583620D81E28009869BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8583520D81E28009869BE /* ViewController.swift */; };
 		1AE8583B20D81E2A009869BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8583A20D81E2A009869BE /* Assets.xcassets */; };
 		1AE8583E20D81E2A009869BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8583C20D81E2A009869BE /* LaunchScreen.storyboard */; };
 		1AE8584920D81E2A009869BE /* WhitbreadTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8584820D81E2A009869BE /* WhitbreadTestTests.swift */; };
@@ -47,7 +46,6 @@
 		1AB3E5369629546AC8EBE4F4 /* Pods_WhitbreadTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhitbreadTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE8583020D81E28009869BE /* WhitbreadTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitbreadTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE8583320D81E28009869BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AE8583520D81E28009869BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AE8583A20D81E2A009869BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AE8583D20D81E2A009869BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AE8583F20D81E2A009869BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				1AE8586920D839F1009869BE /* Helpers */,
 				1AE8585320D81F52009869BE /* Services */,
 				1AE8583320D81E28009869BE /* AppDelegate.swift */,
-				1AE8583520D81E28009869BE /* ViewController.swift */,
 				1AE8583A20D81E2A009869BE /* Assets.xcassets */,
 				1AE8583C20D81E2A009869BE /* LaunchScreen.storyboard */,
 				1AE8583F20D81E2A009869BE /* Info.plist */,
@@ -384,7 +381,6 @@
 				1AAB613320D84BCF003EB17C /* FoursquareAPIResponses.swift in Sources */,
 				1AE8587120D83C6B009869BE /* VenueSearchModel.swift in Sources */,
 				1AAB613E20D85DBB003EB17C /* KeyboardHelper.swift in Sources */,
-				1AE8583620D81E28009869BE /* ViewController.swift in Sources */,
 				1AE8586D20D83A02009869BE /* UITableViewHelper.swift in Sources */,
 				1AE8585820D82008009869BE /* FoursquareAPI.swift in Sources */,
 				1AE8583420D81E28009869BE /* AppDelegate.swift in Sources */,
