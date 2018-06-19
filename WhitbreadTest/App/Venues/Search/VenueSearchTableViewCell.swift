@@ -9,7 +9,6 @@
 import UIKit
 
 class VenueSearchTableViewCell: UITableViewCell, CellReusable {
-    @IBOutlet weak var iamgeView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
 

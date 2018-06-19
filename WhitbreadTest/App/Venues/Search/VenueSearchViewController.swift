@@ -43,7 +43,6 @@ class VenueSearchViewController: UIViewController {
 
     private func setupTableView() {
         tableView.registerCell(cell: VenueSearchTableViewCell.self)
-        tableView.rowHeight = 86
         tableView.dataSource = self
 
         keyboardOffsetHandler = KeyboardOffsetHandler(rootView: view, scrollView: tableView)

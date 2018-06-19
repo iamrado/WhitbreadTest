@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,15 +20,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="423" height="85.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="4eD-rj-P90">
-                        <rect key="frame" x="20" y="11" width="64" height="64"/>
-                        <color key="backgroundColor" red="0.94476602980000002" green="0.94476602980000002" blue="0.94476602980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="4eD-rj-P90" secondAttribute="height" multiplier="1:1" id="1s9-zG-Puo"/>
-                        </constraints>
-                    </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yxh-sT-ZQ0">
-                        <rect key="frame" x="94" y="11" width="37.5" height="34"/>
+                        <rect key="frame" x="20" y="11" width="37.5" height="34"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-Fq-p5b">
                                 <rect key="frame" x="0.0" y="0.0" width="37.5" height="17"/>
@@ -47,19 +39,15 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Yxh-sT-ZQ0" firstAttribute="top" secondItem="4eD-rj-P90" secondAttribute="top" id="4LQ-Vm-FF1"/>
-                    <constraint firstItem="4eD-rj-P90" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="720-vP-kmY"/>
-                    <constraint firstItem="Yxh-sT-ZQ0" firstAttribute="leading" secondItem="4eD-rj-P90" secondAttribute="trailing" constant="10" id="D8y-kN-nPo"/>
-                    <constraint firstItem="4eD-rj-P90" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="PlB-ID-YEC"/>
+                    <constraint firstItem="Yxh-sT-ZQ0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Dg7-JA-ngY"/>
+                    <constraint firstItem="Yxh-sT-ZQ0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dV9-C3-R0j"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Yxh-sT-ZQ0" secondAttribute="bottom" constant="30" id="dmG-DU-DcV"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Yxh-sT-ZQ0" secondAttribute="trailing" constant="10" id="u90-uo-rbK"/>
-                    <constraint firstItem="4eD-rj-P90" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vQM-Hz-WC3"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="addressLabel" destination="jRm-qD-zyK" id="JXD-SK-dte"/>
-                <outlet property="iamgeView" destination="4eD-rj-P90" id="a7B-TR-G4M"/>
                 <outlet property="nameLabel" destination="lxl-Fq-p5b" id="KEM-HU-Bz3"/>
             </connections>
             <point key="canvasLocation" x="-583.5" y="-293"/>
