@@ -12,13 +12,19 @@ import ObjectMapper
 extension FoursquareAPI {
     enum Response {
         struct Venues: ImmutableMappable {
-            struct Venue: ImmutableMappable {
+            struct Venue: ImmutableMappable, Equatable {
                 let name: String
                 let location: Location
+                let id: String
 
                 init(map: Map) throws {
+                    id = try map.value("id")
                     name = try map.value("name")
                     location = try map.value("location")
+                }
+
+                static func == (lhs: FoursquareAPI.Response.Venues.Venue, rhs: FoursquareAPI.Response.Venues.Venue) -> Bool {
+                    return lhs.id == rhs.id
                 }
 
                 struct Location: ImmutableMappable {

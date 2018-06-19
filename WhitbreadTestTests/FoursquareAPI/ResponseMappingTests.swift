@@ -28,6 +28,7 @@ class ResponseMappingTests: XCTestCase {
         XCTAssertEqual(response.venues.count, 1)
 
         let venue = response.venues.first!
+        XCTAssertEqual(venue.id, "5642aef9498e51025cf4a7a5")
         XCTAssertEqual(venue.name, "Mr. Purple")
         XCTAssertNotNil(venue.location.address)
         XCTAssertEqual(venue.location.address!, "180 Orchard St")
